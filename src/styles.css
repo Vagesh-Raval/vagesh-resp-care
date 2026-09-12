@@ -61,6 +61,10 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-light: var(--light);
+  --color-light-foreground: var(--light-foreground);
+  --color-graphite: var(--graphite);
+  --color-ice: var(--ice);
 }
 
 :root {
@@ -101,13 +105,6 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
-}
-
-@theme inline {
-  --color-light: var(--light);
-  --color-light-foreground: var(--light-foreground);
-  --color-graphite: var(--graphite);
-  --color-ice: var(--ice);
 }
 
 .dark {
@@ -289,7 +286,7 @@
   .hero-meta { display: none; }.hero-content { padding-bottom: 70px; }.hero h1 { font-size: clamp(3rem, 11vw, 5.3rem); }.about-grid, .respiratory-grid, .contact-grid { grid-template-columns: 1fr; }.about-copy .lead { margin-top: 0; }.department-shell { grid-template-columns: 1fr; }.department-tabs { grid-template-columns: repeat(5, minmax(130px, 1fr)); overflow-x: auto; border-right: 0; padding-right: 0; }.department-tabs button { min-width: 130px; }.clinical-display, .project-bottom { grid-template-columns: 1fr; }.clinical-visual { min-height: 360px; border-right: 0; border-bottom: 1px solid var(--border); }.mode-switch { margin: 2rem 0; justify-content: flex-start; }.skills-grid { grid-template-columns: repeat(2, 1fr); }.journey-line { grid-template-columns: repeat(2, 1fr); }.role { grid-template-columns: 55px 1fr; }.role-period { grid-column: 2; }.role-main { grid-column: 2; }.project-heading { align-items: start; flex-direction: column; }
 }
 @media (max-width: 600px) {
-  @utility container { width: min(100% - 2rem, 1240px); }
+  .container { width: min(100% - 2rem, 1240px); }
   .site-header { padding-inline: 1rem; height: 66px; }.wordmark strong { display: none; }.mobile-nav { top: 66px; }
   .hero { min-height: 780px; }.hero-shade { background: linear-gradient(0deg, var(--background) 10%, color-mix(in oklab, var(--background) 56%, transparent) 75%, color-mix(in oklab, var(--background) 30%, transparent)); }.hero-content { width: calc(100% - 2rem); padding: 130px 0 70px; }.hero h1 { font-size: 2.85rem; line-height: 1.02; }.hero-content > p { font-size: .9rem; }.hero-actions { flex-direction: column; align-items: stretch; }.video-toggle { right: 1rem; bottom: 1rem; }
   .section { padding: 88px 0; }.section-intro h2, .contact-section h2 { font-size: 2.45rem; }.about-facts { grid-template-columns: 1fr; }.about-facts div { border-right: 0; border-bottom: 1px solid color-mix(in oklab, var(--light-foreground) 15%, transparent); padding: 1.1rem 0; }.about-facts div:last-child { padding-left: 0; }
