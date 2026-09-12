@@ -192,7 +192,7 @@
 .video-toggle { position: absolute; z-index: 3; right: max(1.5rem, calc((100vw - 1240px)/2)); bottom: 2rem; border-radius: 50%; background: color-mix(in oklab, var(--background) 62%, transparent); }
 .section { padding: 125px 0; }
 .light-section { background: var(--light); color: var(--light-foreground); }
-.section-intro { max-width: 780px; opacity: 0; transform: translateY(20px); transition: .7s ease; }
+.section-intro { max-width: 780px; opacity: 1; transform: translateY(0); transition: .7s ease; }
 .section-intro.revealed { opacity: 1; transform: none; }
 .section-kicker span { color: var(--muted-foreground); }
 .section-intro h2, .contact-section h2 { font-size: clamp(2.4rem, 4.7vw, 4.8rem); line-height: 1.03; margin: 1.1rem 0 0; font-weight: 600; }
@@ -262,7 +262,7 @@
 .workflow-step svg { justify-self: end; }.workflow-step.active { background: color-mix(in oklab, var(--primary) 8%, transparent); color: var(--ice); }.workflow-step.active strong, .workflow-step.active > span { color: var(--primary); }
 .experience-section { background: var(--light); color: var(--light-foreground); }
 .timeline { margin-top: 4rem; border-top: 1px solid color-mix(in oklab, var(--light-foreground) 18%, transparent); }
-.role { display: grid; grid-template-columns: 70px 200px 1fr; padding: 2.7rem 0; border-bottom: 1px solid color-mix(in oklab, var(--light-foreground) 18%, transparent); opacity: 0; transform: translateY(18px); transition: .6s ease; }.role.revealed { opacity: 1; transform: none; }
+.role { display: grid; grid-template-columns: 70px 200px 1fr; padding: 2.7rem 0; border-bottom: 1px solid color-mix(in oklab, var(--light-foreground) 18%, transparent); opacity: 1; transform: translateY(0); transition: .6s ease; }.role.revealed { opacity: 1; transform: none; }
 .role-index { color: oklch(0.48 0.12 205); font-size: .7rem; }.role-period { font-size: .68rem; font-weight: 700; }
 .role-main > span { font-size: .67rem; text-transform: uppercase; color: color-mix(in oklab, var(--light-foreground) 55%, transparent); }.role-main h3 { font-size: 2rem; margin: .5rem 0 .15rem; }.role-main h4 { font-size: .82rem; margin: 0; color: oklch(0.48 0.12 205); }.role-main p { line-height: 1.75; max-width: 740px; color: color-mix(in oklab, var(--light-foreground) 70%, transparent); }
 .role-tags { display: flex; flex-wrap: wrap; gap: .4rem; }.role-tags span { color: var(--light-foreground); border-color: color-mix(in oklab, var(--light-foreground) 18%, transparent); }
@@ -273,7 +273,7 @@
 .skill-details { max-height: 0; overflow: hidden; display: grid; transition: max-height .35s ease; color: var(--muted-foreground); }.skill-details span { font-size: .68rem; margin-bottom: .2rem; }.skill-card.active { background: color-mix(in oklab, var(--primary) 8%, transparent); }.skill-card.active .skill-details { max-height: 80px; margin: .6rem 0; }
 .education-section { background: var(--graphite); }
 .journey-line { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 5rem; border-top: 1px solid var(--border); }
-.journey-line article { position: relative; padding: 2.5rem 2rem 0 0; border-right: 1px solid var(--border); min-height: 260px; opacity: 0; transform: translateY(18px); transition: .6s ease; }.journey-line article.revealed { opacity: 1; transform: none; }
+.journey-line article { position: relative; padding: 2.5rem 2rem 0 0; border-right: 1px solid var(--border); min-height: 260px; opacity: 1; transform: translateY(0); transition: .6s ease; }.journey-line article.revealed { opacity: 1; transform: none; }
 .journey-line article::before { content: ""; position: absolute; width: 8px; height: 8px; border-radius: 50%; background: var(--primary); top: -5px; }.journey-line article > span { color: var(--primary); font-size: .66rem; font-weight: 700; }.journey-line article svg { display: block; color: var(--muted-foreground); margin: 2rem 0 3rem; }.journey-line h3 { font-size: 1rem; }.journey-line p { color: var(--muted-foreground); line-height: 1.55; font-size: .78rem; }
 .contact-section { padding: 120px 0 35px; background: var(--light); color: var(--light-foreground); }
 .contact-grid { display: grid; grid-template-columns: 1fr .8fr; gap: 8vw; }.contact-grid > div > p { max-width: 570px; line-height: 1.8; color: color-mix(in oklab, var(--light-foreground) 68%, transparent); }
